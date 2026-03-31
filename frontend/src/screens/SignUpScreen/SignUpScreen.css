@@ -1,0 +1,51 @@
+.sign-up-screen .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.sign-up-screen .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.sign-up-screen .col-lg-6 {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.sign-up-screen .highlighted-btn {
+  background-color: #30bfa1;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.highlighted-btn {
+  padding: 16px;
+  border-radius: 20px;
+}
+
+.sign-up-screen .highlighted-btn:hover {
+  background-color: darkcyan;
+}
+
+.error-text {
+  color: red;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.link {
+  color: #111;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

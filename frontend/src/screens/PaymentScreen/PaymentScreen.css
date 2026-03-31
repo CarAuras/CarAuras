@@ -1,0 +1,270 @@
+.subscribe-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .back-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    color: #555;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    transition: color 0.2s;
+  }
+  
+  .back-button:hover {
+    color: #000;
+  }
+  
+  .subscribe-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .subscribe-header h1 {
+    font-size: 2.2rem;
+    color: #2f3542;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subscribe-header p {
+    color: #878787;
+    font-size: 1.1rem;
+  }
+  
+  .payment-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2rem;
+  }
+  
+  .plan-summary {
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .summary-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .summary-header h2 {
+    font-size: 1.8rem;
+    color: #2f3542;
+    margin-bottom: 0.5rem;
+  }
+  
+  .price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #6e8efb;
+  }
+  
+  .features-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .features-list li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #555;
+  }
+  
+  .check-icon {
+    color: #4cd964;
+    font-size: 1.1rem;
+    margin-top: 2px;
+  }
+  
+  .security-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #878787;
+    font-size: 0.9rem;
+  }
+  
+  .lock-icon {
+    color: #4cd964;
+  }
+  
+  .payment-form-container {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .payment-methods h3 {
+    font-size: 1.3rem;
+    color: #2f3542;
+    margin-bottom: 1rem;
+  }
+  
+  .method-options {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .method-option {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .method-option:hover {
+    border-color: #6e8efb;
+  }
+  
+  .method-option.active {
+    border-color: #6e8efb;
+    background: #f5f8ff;
+  }
+  
+  .card-icons, .upi-icons {
+    display: flex;
+    gap: 10px;
+    font-size: 1.8rem;
+  }
+  
+  .visa-icon {
+    color: #1a1f71;
+  }
+  
+  .mastercard-icon {
+    color: #eb001b;
+  }
+  
+  .phonepe-icon {
+    color: #5f259f;
+  }
+  
+  .paytm-icon {
+    color: #20336b;
+  }
+  
+  .gpay-icon {
+    color: #4285f4;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.2s;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #6e8efb;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .form-row .form-group {
+    flex: 1;
+  }
+  
+  .upi-apps {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .upi-app {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 1rem;
+    background: #f5f5f5;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .upi-app:hover {
+    background: #e0e0e0;
+  }
+  
+  .upi-icon {
+    font-size: 2rem;
+  }
+  
+  .pay-button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 1rem;
+  }
+  
+  .pay-button:hover {
+    background: linear-gradient(135deg, #5a7df4, #9666d8);
+    transform: translateY(-2px);
+  }
+  
+  .pay-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  @media (max-width: 768px) {
+    .payment-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .subscribe-header h1 {
+      font-size: 1.8rem;
+    }
+    
+    .method-options {
+      flex-direction: column;
+    }
+  }

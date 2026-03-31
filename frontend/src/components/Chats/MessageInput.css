@@ -1,0 +1,121 @@
+.message-input-container {
+  padding: 16px;
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.image-preview {
+  margin-bottom: 12px;
+}
+
+.preview-container {
+  position: relative;
+  display: inline-block;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.preview-container img {
+  max-height: 150px;
+  max-width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.preview-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.preview-close:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+}
+
+.message-form {
+  display: flex;
+  gap: 8px;
+}
+
+.input-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: #f3f4f6;
+  border-radius: 24px;
+  padding: 0 12px;
+  transition: all 0.2s ease;
+}
+
+.input-wrapper:focus-within {
+  background: #ffffff;
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.message-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 12px 8px;
+  font-size: 14px;
+  outline: none;
+  color: #111827;
+}
+
+.upload-button {
+  background: transparent;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  margin-right: 4px;
+}
+
+.upload-button:hover {
+  color: #3b82f6;
+  background: #e5e7eb;
+}
+
+.file-input {
+  display: none;
+}
+
+.send-button {
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: #3b82f6;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.send-button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.send-button:not(:disabled):hover {
+  background: #2563eb;
+  transform: scale(1.05);
+}

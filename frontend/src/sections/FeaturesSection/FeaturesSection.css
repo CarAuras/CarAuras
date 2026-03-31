@@ -1,0 +1,726 @@
+.features-section-modern {
+  padding: 60px 20px;
+  position: relative;
+  background: var(--light);
+  overflow: hidden;
+}
+
+.features-bg-elements {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.bg-blur-1 {
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(17, 24, 39, 0.03) 0%, transparent 70%);
+  filter: blur(60px);
+}
+
+.bg-blur-2 {
+  position: absolute;
+  bottom: -20%;
+  left: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(17, 24, 39, 0.03) 0%, transparent 70%);
+  filter: blur(60px);
+}
+
+.bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(17, 24, 39, 0.02) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(17, 24, 39, 0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.features-header-modern {
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.header-badge-modern {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--white);
+  padding: 6px 20px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(17, 24, 39, 0.1);
+  box-shadow: var(--shadow-sm);
+}
+
+.header-badge-modern svg {
+  font-size: 16px;
+  color: var(--primary);
+}
+
+.header-badge-modern span {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primary);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.features-title-modern {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--dark);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.gradient-modern {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--gray) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  display: inline-block;
+}
+
+.features-subtitle-modern {
+  font-size: 1rem;
+  color: var(--gray);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.features-grid-modern {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1300px;
+  margin: 0 auto 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.feature-card-modern {
+  position: relative;
+  background: var(--white);
+  border-radius: 24px;
+  padding: 24px 20px;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(17, 24, 39, 0.06);
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.feature-card-modern.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feature-card-modern:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+  border-color: rgba(17, 24, 39, 0.15);
+}
+
+.card-number {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-size: 40px;
+  font-weight: 800;
+  color: rgba(17, 24, 39, 0.03);
+  font-family: monospace;
+  pointer-events: none;
+}
+
+.card-header-modern {
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.icon-wrapper-modern {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--gray-dark) 100%);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.icon-wrapper-modern svg {
+  font-size: 28px;
+  color: white;
+}
+
+.feature-card-modern:hover .icon-wrapper-modern {
+  transform: scale(1.05) rotate(3deg);
+}
+
+.feature-title-modern {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.feature-description-modern {
+  font-size: 0.85rem;
+  color: var(--gray);
+  line-height: 1.5;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.feature-stats {
+  margin-bottom: 20px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(17, 24, 39, 0.08);
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--gray);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.feature-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--primary);
+  cursor: pointer;
+  transition: var(--transition);
+  position: relative;
+  z-index: 2;
+}
+
+.feature-link:hover {
+  gap: 10px;
+  color: var(--gray-dark);
+}
+
+.feature-link svg {
+  transition: transform 0.3s ease;
+}
+
+.feature-link:hover svg {
+  transform: translateX(4px);
+}
+
+.stats-showcase {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto 50px;
+  padding: 30px 0;
+  border-top: 1px solid rgba(17, 24, 39, 0.08);
+  border-bottom: 1px solid rgba(17, 24, 39, 0.08);
+  position: relative;
+  z-index: 2;
+}
+
+.stat-item {
+  text-align: center;
+  flex: 1;
+}
+
+.stat-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 10px;
+  color: var(--primary);
+  opacity: 0.7;
+}
+
+.stat-icon svg {
+  font-size: 28px;
+}
+
+.stat-number {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--dark);
+  margin-bottom: 6px;
+}
+
+.stat-text {
+  font-size: 13px;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.benefits-section {
+  max-width: 1100px;
+  margin: 0 auto 50px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.benefits-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 30px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.benefit-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px 16px;
+  background: var(--white);
+  border-radius: 20px;
+  transition: var(--transition);
+  border: 1px solid rgba(17, 24, 39, 0.06);
+}
+
+.benefit-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  border-color: rgba(17, 24, 39, 0.12);
+}
+
+.benefit-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(17, 24, 39, 0.05);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.benefit-icon svg {
+  font-size: 24px;
+  color: var(--primary);
+}
+
+.benefit-content h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 5px;
+}
+
+.benefit-content p {
+  font-size: 0.75rem;
+  color: var(--gray);
+}
+
+.trust-badge-modern {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.trust-content-modern {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--white);
+  padding: 12px 28px;
+  border-radius: 100px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(17, 24, 39, 0.08);
+}
+
+.trust-content-modern svg:first-child {
+  font-size: 22px;
+  color: var(--primary);
+}
+
+.trust-content-modern > span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.rating-stars-modern {
+  display: flex;
+  gap: 3px;
+}
+
+.rating-stars-modern svg {
+  width: 16px;
+  height: 16px;
+  color: #fbbf24;
+  fill: #fbbf24;
+}
+
+.rating-value {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+@media (max-width: 1200px) {
+  .features-grid-modern {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .features-section-modern {
+    padding: 50px 20px;
+  }
+  
+  .features-title-modern {
+    font-size: 2rem;
+  }
+  
+  .features-grid-modern {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .stats-showcase {
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 25px 0;
+  }
+  
+  .stat-item {
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-section-modern {
+    padding: 40px 16px;
+  }
+  
+  .features-header-modern {
+    margin-bottom: 40px;
+  }
+  
+  .features-title-modern {
+    font-size: 1.75rem;
+  }
+  
+  .features-subtitle-modern {
+    font-size: 0.9rem;
+  }
+  
+  .features-grid-modern {
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  
+  .feature-card-modern {
+    padding: 20px 16px;
+    border-radius: 20px;
+  }
+  
+  .card-number {
+    font-size: 32px;
+    top: 12px;
+    right: 16px;
+  }
+  
+  .icon-wrapper-modern {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+  }
+  
+  .icon-wrapper-modern svg {
+    font-size: 24px;
+  }
+  
+  .feature-title-modern {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+  
+  .feature-description-modern {
+    font-size: 0.8rem;
+    margin-bottom: 16px;
+  }
+  
+  .feature-stats {
+    margin-bottom: 16px;
+    padding-top: 10px;
+  }
+  
+  .stat-value {
+    font-size: 20px;
+  }
+  
+  .stats-showcase {
+    margin-bottom: 40px;
+    padding: 20px 0;
+    gap: 20px;
+  }
+  
+  .stat-number {
+    font-size: 24px;
+  }
+  
+  .stat-text {
+    font-size: 12px;
+  }
+  
+  .benefits-section {
+    margin-bottom: 40px;
+  }
+  
+  .benefits-title {
+    font-size: 1.3rem;
+    margin-bottom: 24px;
+  }
+  
+  .benefits-grid {
+    gap: 12px;
+  }
+  
+  .benefit-card {
+    padding: 20px 12px;
+    border-radius: 16px;
+  }
+  
+  .benefit-icon {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 12px;
+  }
+  
+  .benefit-icon svg {
+    font-size: 22px;
+  }
+  
+  .benefit-content h4 {
+    font-size: 0.85rem;
+  }
+  
+  .trust-content-modern {
+    padding: 10px 20px;
+    gap: 12px;
+  }
+  
+  .trust-content-modern > span {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .features-section-modern {
+    padding: 30px 12px;
+  }
+  
+  .features-header-modern {
+    margin-bottom: 30px;
+  }
+  
+  .header-badge-modern {
+    padding: 4px 16px;
+    margin-bottom: 16px;
+  }
+  
+  .header-badge-modern svg {
+    font-size: 14px;
+  }
+  
+  .header-badge-modern span {
+    font-size: 10px;
+  }
+  
+  .features-title-modern {
+    font-size: 1.5rem;
+  }
+  
+  .features-subtitle-modern {
+    font-size: 0.85rem;
+  }
+  
+  .features-grid-modern {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+  
+  .feature-card-modern {
+    padding: 16px 12px;
+    border-radius: 18px;
+  }
+  
+  .card-number {
+    font-size: 28px;
+    top: 10px;
+    right: 12px;
+  }
+  
+  .card-header-modern {
+    margin-bottom: 14px;
+  }
+  
+  .icon-wrapper-modern {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+  }
+  
+  .icon-wrapper-modern svg {
+    font-size: 20px;
+  }
+  
+  .feature-title-modern {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+  }
+  
+  .feature-description-modern {
+    font-size: 0.7rem;
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+  
+  .feature-stats {
+    margin-bottom: 12px;
+    padding-top: 8px;
+  }
+  
+  .stat-value {
+    font-size: 16px;
+  }
+  
+  .stat-label {
+    font-size: 8px;
+  }
+  
+  .feature-link {
+    font-size: 11px;
+    gap: 4px;
+  }
+  
+  .stats-showcase {
+    margin-bottom: 30px;
+    padding: 16px 0;
+    gap: 15px;
+  }
+  
+  .stat-icon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .stat-icon svg {
+    font-size: 22px;
+  }
+  
+  .stat-number {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+  
+  .stat-text {
+    font-size: 11px;
+  }
+  
+  .benefits-section {
+    margin-bottom: 30px;
+  }
+  
+  .benefits-title {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .benefit-card {
+    padding: 16px 10px;
+    border-radius: 14px;
+  }
+  
+  .benefit-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .benefit-icon svg {
+    font-size: 18px;
+  }
+  
+  .benefit-content h4 {
+    font-size: 0.8rem;
+    margin-bottom: 3px;
+  }
+  
+  .benefit-content p {
+    font-size: 0.65rem;
+  }
+  
+  .trust-badge-modern {
+    margin-top: 10px;
+  }
+  
+  .trust-content-modern {
+    padding: 8px 16px;
+    gap: 10px;
+  }
+  
+  .trust-content-modern svg:first-child {
+    font-size: 18px;
+  }
+  
+  .trust-content-modern > span {
+    font-size: 0.7rem;
+  }
+  
+  .rating-stars-modern svg {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .rating-value {
+    font-size: 0.8rem;
+  }
+}

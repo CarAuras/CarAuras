@@ -1,0 +1,19 @@
+.message-box {
+    background-color: #fff;
+    padding: 50px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.not-found-im {
+    width: 160px;
+    height: auto;
+}
+
+.message-title {
+    font-size: 25px;
+    font-family: sans-serif;
+}

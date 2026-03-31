@@ -1,0 +1,148 @@
+.basic-info-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .form-title {
+    text-align: center;
+    margin-bottom: 2.5rem !important;
+    color: #2c3e50 !important;
+    font-weight: 600 !important;
+  }
+  
+  .title-icon {
+    color: #30bfa1;
+    margin-right: 12px;
+  }
+  
+  .car-details-form {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .form-row {
+    margin-top: 1.5rem !important;
+  }
+  
+  .form-item {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-item label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #34495e;
+    font-size: 0.95rem;
+  }
+  
+  .form-input {
+    width: 100%;
+    border-radius: 8px !important;
+    padding: 12px 16px !important;
+    border: 1px solid #e0e0e0 !important;
+    transition: all 0.3s ease;
+  }
+  
+  .form-input:hover {
+    border-color: #30bfa1 !important;
+  }
+  
+  .form-input:focus {
+    box-shadow: 0 0 0 2px rgba(48, 191, 161, 0.2) !important;
+    border-color: #30bfa1 !important;
+  }
+  
+  .form-select {
+    width: 100% !important;
+    border-radius: 8px !important;
+  }
+  
+  .form-select .ant-select-selector {
+    height: 46px !important;
+    padding: 8px 16px !important;
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 8px !important;
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-select .ant-select-selector:hover {
+    border-color: #30bfa1 !important;
+  }
+  
+  .form-select .ant-select-focused .ant-select-selector {
+    box-shadow: 0 0 0 2px rgba(48, 191, 161, 0.2) !important;
+    border-color: #30bfa1 !important;
+  }
+  
+  .input-icon {
+    color: #95a5a6 !important;
+    margin-right: 8px;
+  }
+  
+  .select-icon {
+    color: #95a5a6 !important;
+  }
+  
+  .input-error .form-input,
+  .input-error .ant-select-selector {
+    border-color: #ff4d4f !important;
+  }
+  
+  .input-error .form-input:focus,
+  .input-error .ant-select-focused .ant-select-selector {
+    box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2) !important;
+  }
+  
+  .error-feedback {
+    color: #ff4d4f;
+    margin-top: 8px;
+    font-size: 0.85rem;
+  }
+  
+  .form-actions {
+    text-align: right;
+    margin-top: 2.5rem;
+  }
+  
+  .submit-button {
+    background: #30bfa1;
+    border: none;
+    border-radius: 8px;
+    padding: 0 2rem;
+    height: 42px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background: #27ae8f !important;
+    transform: translateY(-2px);
+  }
+  
+  .submit-button:active {
+    transform: translateY(0);
+  }
+  
+  @media (max-width: 768px) {
+    .basic-info-container {
+      padding: 1rem;
+    }
+    
+    .car-details-form {
+      padding: 1.5rem;
+    }
+    
+    .form-row .ant-col {
+      width: 100%;
+      max-width: 100%;
+    }
+    
+    .form-row .ant-col:first-child {
+      margin-bottom: 1.5rem;
+    }
+  }

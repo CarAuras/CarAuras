@@ -1,0 +1,147 @@
+.screens {
+    padding: 0px;
+  }
+  
+
+  .slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 300px; 
+  }
+  
+  .card-slider {
+    min-height: 300px;
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    white-space: nowrap;
+    padding: 10px 0;
+    flex: 1;
+  }
+
+  
+  
+  .card-slider::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+  }
+  
+  .card-container {
+    display: inline-flex;
+    gap: 20px;
+  }
+  
+  .card-container > * {
+    flex: 0 0 auto;
+    width: 250px;
+  }
+  
+  .arrow-button {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    color: #fff;
+  }
+  
+  .arrow-button.left {
+    position: absolute;
+    left: -20px;
+  }
+  
+  .arrow-button.right {
+    position: absolute;
+    right: -20px;
+  }
+  
+  @media (max-width: 768px) {
+    .card-container > * {
+      width: 200px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-container > * {
+      width: 150px;
+    }
+  }
+
+  .cards-container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 20px 0;
+  }
+  
+
+  /* .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 12px;
+    width: 100%;
+  }
+  
+
+  @media (min-width: 768px) {
+    .cards-grid {
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); 
+      gap: 20px;
+    }
+  } */
+
+  .tab-scroll-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .tab-scroll-wrapper {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    flex: 1;
+  }
+  
+  .tab-scroll-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .tab-list {
+    display: flex;
+    white-space: nowrap;
+  }
+  
+  .scroll-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1;
+  }
+  
+  .scroll-button svg {
+    font-size: 24px;
+    color: #666;
+  }
+  
+  .scroll-button:hover svg {
+    color: #333;
+  }
+
+  .latst-cars-section .card, .tabs-container .card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.latst-cars-section section.Toastify, .tabs-container section.Toastify {
+    display: none;
+}
+
+
+@media (max-width: 400px) {
+    .cards-grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 8px;
+    }
+}

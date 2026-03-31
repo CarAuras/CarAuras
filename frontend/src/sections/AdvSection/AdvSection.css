@@ -1,0 +1,46 @@
+.adv-section {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .adv-card {
+    flex: 1;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .adv-card.light {
+    background-color: #f5f5f5;
+  }
+  
+  .adv-card.blue {
+    background-color: #d6f0ff;
+  }
+  
+  .adv-text h4 {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .adv-text h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #111;
+    margin: 10px 0;
+  }
+  
+  .shop-now {
+    font-size: 16px;
+    color: #111;
+    text-decoration: none;
+  }
+  
+  .adv-image img {
+    width: 180px;
+    height: auto;
+  }
+  

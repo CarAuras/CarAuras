@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600&display=swap');
+
+.au-wrap {
+
+  color: var(--dark);
+  overflow-x: hidden;
+  background: var(--light);
+}
+
+.au-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.au-eyebrow {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gray);
+  margin: 0 0 0.75rem;
+}
+
+.au-section-title {
+
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
+  font-weight: 800;
+  color: var(--dark);
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+.au-section-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 3.5rem;
+}
+
+.au-section-header .au-section-title {
+  margin-bottom: 0;
+}
+
+.au-body {
+  font-size: 1rem;
+  color: var(--gray);
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+}
+
+/* ── Hero ─────────────────────────────────── */
+.au-hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5rem 1.5rem 4rem;
+  background-image: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+}
+
+.au-hero-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, rgba(15,23,42,0.85) 0%, rgba(30,42,62,0.75) 100%);
+}
+
+.au-hero-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.au-hero .au-eyebrow {
+  color: rgba(255,255,255,0.6);
+}
+
+.au-hero-label {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 1.25rem;
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 0.3rem 0.875rem;
+  border-radius: 2rem;
+}
+
+.au-hero-title {
+
+  font-size: clamp(2.25rem, 5vw, 3.75rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  margin: 0 0 1.25rem;
+  color: var(--white);
+}
+
+.au-hero-sub {
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  font-weight: 400;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.7;
+  max-width: 580px;
+  margin: 0 auto 2.5rem;
+}
+
+.au-hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.875rem;
+  flex-wrap: wrap;
+  margin-bottom: 3.5rem;
+}
+
+.au-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.75rem;
+  background: var(--white);
+  color: var(--dark);
+  border: none;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+
+  text-decoration: none;
+}
+
+.au-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.au-btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.75rem;
+  background: rgba(255,255,255,0.1);
+  color: var(--white);
+  border: 1.5px solid rgba(255,255,255,0.3);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+
+  backdrop-filter: blur(6px);
+}
+
+.au-btn-ghost:hover {
+  background: rgba(255,255,255,0.18);
+  border-color: rgba(255,255,255,0.5);
+}
+
+.au-hero-stats {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 14px;
+  padding: 1.25rem 2rem;
+  backdrop-filter: blur(10px);
+}
+
+.au-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.au-stat-num {
+ 
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.au-stat-label {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.55);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.au-stat-divider {
+  width: 1px;
+  height: 36px;
+  background: rgba(255,255,255,0.2);
+  flex-shrink: 0;
+}
+
+/* ── What We Do ───────────────────────────── */
+.au-what {
+  padding: 6rem 0;
+  background: var(--white);
+}
+
+.au-what-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.au-what-text {
+  max-width: 520px;
+}
+
+.au-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.au-checklist li {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--gray-dark);
+}
+
+.au-checklist li svg {
+  color: #10b981;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+}
+
+.au-what-image {
+  position: relative;
+}
+
+.au-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+  box-shadow: var(--shadow-lg);
+}
+
+.au-img-badge {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  background: var(--white);
+  border-radius: 10px;
+  padding: 0.625rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--dark);
+  box-shadow: var(--shadow);
+}
+
+.au-img-badge svg {
+  color: #10b981;
+}
+
+/* ── Values ───────────────────────────────── */
+.au-values {
+  padding: 6rem 0;
+  background: var(--light);
+}
+
+.au-values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.au-value-card {
+  background: var(--white);
+  border: 1px solid #e8edf3;
+  border-radius: 16px;
+  padding: 1.75rem;
+  transition: var(--transition);
+}
+
+.au-value-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+  border-color: transparent;
+}
+
+.au-value-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--dark);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 1rem;
+  margin-bottom: 1.125rem;
+}
+
+.au-value-card h3 {
+
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.au-value-card p {
+  font-size: 0.875rem;
+  color: var(--gray);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ── How It Works ─────────────────────────── */
+.au-how {
+  padding: 6rem 0;
+  background: var(--white);
+}
+
+.au-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  position: relative;
+}
+
+.au-steps::before {
+  content: '';
+  position: absolute;
+  top: 22px;
+  left: calc(12.5% + 22px);
+  right: calc(12.5% + 22px);
+  height: 1px;
+  background: #e8edf3;
+  z-index: 0;
+}
+
+.au-step {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.au-step-num {
+
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  background: var(--dark);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+  border: 3px solid var(--white);
+  box-shadow: 0 0 0 1px #e8edf3;
+}
+
+.au-step h3 {
+ 
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.au-step p {
+  font-size: 0.85rem;
+  color: var(--gray);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ── CTA ──────────────────────────────────── */
+.au-cta {
+  padding: 6rem 0;
+  background: var(--dark);
+}
+
+.au-cta-inner {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.au-cta-inner h2 {
+ 
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: -0.03em;
+  margin: 0 0 0.875rem;
+}
+
+.au-cta-inner p {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.6);
+  margin: 0 0 2.5rem;
+  line-height: 1.7;
+}
+
+.au-cta-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.875rem;
+  flex-wrap: wrap;
+}
+
+.au-cta .au-btn-primary {
+  background: var(--white);
+  color: var(--dark);
+}
+
+.au-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.75rem;
+  background: transparent;
+  color: rgba(255,255,255,0.7);
+  border: 1.5px solid rgba(255,255,255,0.25);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+ 
+}
+
+.au-btn-outline:hover {
+  border-color: rgba(255,255,255,0.5);
+  color: var(--white);
+}
+
+/* ── Modal ────────────────────────────────── */
+.au-modal {
+  padding: 2.5rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.au-modal-icon {
+  font-size: 2.25rem;
+}
+
+.au-modal h3 {
+ 
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.au-modal p {
+  font-size: 0.875rem;
+  color: var(--gray);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.au-modal-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.au-modal .au-btn-primary {
+  background: var(--dark);
+  color: var(--white);
+  width: 100%;
+  justify-content: center;
+}
+
+.au-btn-ghost-sm {
+  background: transparent;
+  border: none;
+  color: var(--gray);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem;
+
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* ── Responsive ───────────────────────────── */
+@media (max-width: 1024px) {
+  .au-values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .au-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .au-steps::before {
+    display: none;
+  }
+
+  .au-what-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .au-what-text {
+    max-width: 100%;
+  }
+
+  .au-img {
+    height: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .au-hero {
+    min-height: 80vh;
+    padding: 4rem 1.25rem 3rem;
+  }
+
+  .au-hero-stats {
+    padding: 1rem 1.25rem;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .au-stat {
+    padding: 0.5rem 1rem;
+  }
+
+  .au-stat-divider {
+    display: none;
+  }
+
+  .au-what,
+  .au-values,
+  .au-how,
+  .au-cta {
+    padding: 4rem 0;
+  }
+
+  .au-values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .au-steps {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .au-step {
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0;
+  }
+
+  .au-step-num {
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  .au-step div {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .au-hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .au-btn-primary,
+  .au-btn-ghost {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .au-cta-btns {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .au-btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .au-stat-num {
+    font-size: 1.4rem;
+  }
+}

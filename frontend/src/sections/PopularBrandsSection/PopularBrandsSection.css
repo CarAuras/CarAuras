@@ -1,0 +1,222 @@
+.popular-brands-section {
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #f9faff 0%, #ffffff 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .popular-brands-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, #606cbc, #8a94d4);
+  }
+  
+  .brands-header {
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .section-title {
+    color: #2d3748;
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    line-height: 1.2;
+  }
+  
+  .title-accent {
+    color: var(--primary);
+    position: relative;
+    display: inline-block;
+  }
+  
+  .title-accent::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background-color: rgba(96, 108, 188, 0.2);
+    z-index: -1;
+    border-radius: 4px;
+  }
+  
+  .section-subtitle {
+    color: #718096;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .brands-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 30px;
+  }
+  
+  .brand-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+  }
+  
+  .brand-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  }
+  
+  .brand-logo-container {
+    position: relative;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f6f7ff 0%, #eef0ff 100%);
+    padding: 20px;
+  }
+  
+  .brand-logo {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  .brand-card:hover .brand-logo {
+    transform: scale(1.05);
+  }
+  
+  .brand-count {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #606cbc;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(96, 108, 188, 0.2);
+  }
+  
+  .brand-info {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .brand-name {
+    color: #2d3748;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+  }
+  
+  .explore-btn {
+    background: transparent;
+    color: #606cbc;
+    border: 1px solid #606cbc;
+    border-radius: 6px;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .explore-btn:hover {
+    background: #606cbc;
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  .cta-container {
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .cta-button {
+    background: #606cbc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 35px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(96, 108, 188, 0.3);
+  }
+  
+  .cta-button:hover {
+    background: #4e5aa3;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(96, 108, 188, 0.4);
+  }
+  
+  .arrow-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .cta-button:hover .arrow-icon {
+    transform: translateX(5px);
+  }
+  
+  @media (max-width: 1024px) {
+    .brands-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .popular-brands-section {
+      padding: 60px 20px;
+    }
+    
+    .section-title {
+      font-size: 2.2rem;
+    }
+    
+    .brands-grid {
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 20px;
+    }
+    
+    .brand-logo-container {
+      height: 120px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-title {
+      font-size: 1.8rem;
+    }
+    
+    .section-subtitle {
+      font-size: 1rem;
+    }
+    
+    .brands-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }

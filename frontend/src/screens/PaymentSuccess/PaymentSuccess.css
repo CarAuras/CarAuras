@@ -1,0 +1,75 @@
+#payment-success-container {
+    min-height: 100vh;
+    background-color: #f9fafb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  }
+  
+  #payment-success-card {
+    background-color: white;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 448px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  #payment-success-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+    color: #10b981;
+  }
+  
+  #payment-success-card h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 8px;
+  }
+  
+  #payment-success-card p {
+    color: #4b5563;
+    margin-bottom: 24px;
+    line-height: 1.5;
+  }
+  
+  #invoice-alert {
+    background-color: #ecfdf5;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+  }
+  
+  #invoice-alert p {
+    color: #047857;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  #payment-success-card button {
+    width: 100%;
+    background-color: #606cbc;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  #payment-success-card button:hover {
+    background-color: #606cbc;
+  }
+  
+  #payment-success-card small {
+    color: #6b7280;
+    font-size: 14px;
+    display: block;
+    margin-top: 16px;
+  }
