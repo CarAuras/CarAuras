@@ -20,12 +20,65 @@ export const formatViews = (view) => {
   }
 };
 
+// export const convertContentfullResponse = async (resp) => {
+//   const formattedResponse = [];
+
+//   if (resp.length > 0) {
+
+//     resp.forEach((item, index) => {
+//       const entry = {
+//         id: index + 1,
+//         slug: item.fields.title
+//           ?.toLowerCase()
+//           .replace(/\s+/g, "-")
+//           .replace(/[^\w-]+/g, ""),
+//         category: item.fields.category || "Demo",
+//         title: item.fields.title,
+//         date: new Date(item.fields.date).toLocaleDateString("en-US", {
+//           year: "numeric",
+//           month: "long",
+//           day: "numeric",
+//         }),
+//         image: item.fields.image?.fields?.file?.url || "",
+//         alt: item.fields.title?.toLowerCase().replace(/\s+/g, " "),
+//         sections:
+//           item.fields.sections?.map((section) => ({
+//             content: section,
+//           })) || [],
+//         description:
+//           item?.fields?.description?.content[0]?.content[0]?.value ?? "test",
+//       };
+
+//       formattedResponse.push(entry);
+//     });
+//   }
+
+//   return formattedResponse;
+// };
+
 export const convertContentfullResponse = async (resp) => {
   const formattedResponse = [];
 
+  const extractText = (node) => {
+    if (!node) return "";
+
+    if (node.nodeType === "text") {
+      return node.value;
+    }
+
+    if (Array.isArray(node.content)) {
+      return node.content.map(extractText).join("");
+    }
+
+    return "";
+  };
+
   if (resp.length > 0) {
-    console.log("RESP----------------", resp);
     resp.forEach((item, index) => {
+      const fullDescription = item?.fields?.description?.content
+        ?.map((paragraph) => extractText(paragraph))
+        .join("\n\n");
+
       const entry = {
         id: index + 1,
         slug: item.fields.title
@@ -45,8 +98,7 @@ export const convertContentfullResponse = async (resp) => {
           item.fields.sections?.map((section) => ({
             content: section,
           })) || [],
-        description:
-          item?.fields?.description?.content[0]?.content[0]?.value ?? "test",
+        description: fullDescription || "test",
       };
 
       formattedResponse.push(entry);
