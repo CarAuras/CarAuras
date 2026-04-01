@@ -38,7 +38,12 @@ const limiter = rateLimit({
 // };
 
 var corsOptions = {
-  origin: "https://carauras.com",
+  origin:
+    process.env.NODE_ENV === "development"
+      ? "https://carauras-dev.netlify.app"
+      : process.env.NODE_ENV === "production"
+      ? "https://carauras.com"
+      : "http://localhost:3000",
 
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   preflightContinue: false,
