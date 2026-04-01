@@ -5,7 +5,8 @@
 //     ? "https://carauras-backend.onrender.com"
 //     : "https://carauras-backend.onrender.com";
 
-export const BACKEND_URL = "http://localhost:5000";
+// export const BACKEND_URL = "http://localhost:5000";
+export const BACKEND_URL = "https://carauras-1.onrender.com";
 
 export const PROFILE_URL = `${BACKEND_URL}/api/v1/user/me`;
 export const SIGN_IN_URL = `${BACKEND_URL}/api/v1/user/signin`;

@@ -254,6 +254,7 @@ function Header() {
   const navItems = [
     { path: "/", label: "Home", icon: Dashboard },
     { path: "/used-cars", label: "Find Cars", icon: Storefront },
+    { path: "/blogs", label: "Blogs", icon: Storefront },
     { path: "/favourites", label: "Favourites", icon: Favorite },
     { path: "/about-us", label: "About Us", icon: Info },
     { path: "/reviews", label: "Reviews", icon: Reviews },
@@ -278,7 +279,12 @@ function Header() {
           <div className="container">
             <div className="header-content">
               <div className="logo-container">
-                <div className="brand">
+                <div
+                  className="brand"
+                  onClick={() => {
+                    window.location.href = "/";
+                  }}
+                >
                   <span className="car-part">Car</span>
                   <span className="auras-part">Auras</span>
                 </div>

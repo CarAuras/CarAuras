@@ -76,7 +76,7 @@ function Footer() {
         { name: "Home", path: "/" },
         { name: "About Us", path: "/about-us" },
         { name: "Contact Us", path: "/contact-us" },
-        { name: "Careers", path: "/careers" },
+        // { name: "Careers", path: "/careers" },
         { name: "Blog", path: "/blogs" },
       ],
     },
@@ -84,49 +84,59 @@ function Footer() {
       title: "Services",
       links: [
         { name: "Find Cars", path: "/used-cars" },
-        { name: "Sell Your Car", path: "/sell-car" },
-        { name: "Car Valuation", path: "/valuation" },
+        // { name: "Sell Your Car", path: "/sell-car" },
+        // { name: "Car Valuation", path: "/valuation" },
         { name: "Favorites", path: "/favourites" },
         { name: "Reviews", path: "/reviews" },
       ],
     },
-    support: {
-      title: "Support",
-      links: [
-        { name: "Help Center", path: "/help" },
-        { name: "FAQs", path: "/faq" },
-        { name: "How It Works", path: "/how-it-works" },
-        { name: "Safety Tips", path: "/safety-tips" },
-        { name: "Report an Issue", path: "/report" },
-      ],
-    },
-    legal: {
-      title: "Legal",
-      links: [
-        { name: "Terms & Conditions", path: "/terms" },
-        { name: "Privacy Policy", path: "/privacy" },
-        { name: "Cookie Policy", path: "/cookies" },
-        { name: "Disclaimer", path: "/disclaimer" },
-      ],
-    },
+    // support: {
+    //   title: "Support",
+    //   links: [
+    //     { name: "Help Center", path: "/help" },
+    //     { name: "FAQs", path: "/faq" },
+    //     { name: "How It Works", path: "/how-it-works" },
+    //     { name: "Safety Tips", path: "/safety-tips" },
+    //     { name: "Report an Issue", path: "/report" },
+    //   ],
+    // },
+    // legal: {
+    //   title: "Legal",
+    //   links: [
+    //     { name: "Terms & Conditions", path: "/terms" },
+    //     { name: "Privacy Policy", path: "/privacy" },
+    //     { name: "Cookie Policy", path: "/cookies" },
+    //     { name: "Disclaimer", path: "/disclaimer" },
+    //   ],
+    // },
   };
 
   const socialLinks = [
-    { icon: FacebookIcon, url: FACEBOOK, color: "#1877f2", name: "Facebook" },
+    {
+      icon: FacebookIcon,
+      url: "https://www.facebook.com/profile.php?id=61581912191717",
+      color: "#1877f2",
+      name: "Facebook",
+    },
     {
       icon: InstagramIcon,
-      url: INSTAGRAM,
+      url: "https://www.instagram.com/carsauraa/",
       color: "#e4405f",
       name: "Instagram",
     },
-    { icon: XIcon, url: X, color: "#000000", name: "X" },
-    { icon: LinkedInIcon, url: LINKEDIN, color: "#0a66c2", name: "LinkedIn" },
     {
-      icon: YouTubeIcon,
-      url: "https://www.youtube.com/@carauras",
-      color: "#ff0000",
-      name: "YouTube",
+      icon: XIcon,
+      url: "https://x.com/car_auras",
+      color: "#000000",
+      name: "X",
     },
+    // { icon: LinkedInIcon, url: LINKEDIN, color: "#0a66c2", name: "LinkedIn" },
+    // {
+    //   icon: YouTubeIcon,
+    //   url: "https://www.youtube.com/@carauras",
+    //   color: "#ff0000",
+    //   name: "YouTube",
+    // },
   ];
 
   return (
@@ -135,27 +145,27 @@ function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <div className="brand-logo">
-              <span className="logo-icon">🚗</span>
+              <span className="logo-icon"></span>
               <h2>
                 Car<span>Auras</span>
               </h2>
             </div>
             <p className="brand-description">
-              India's most trusted platform for buying and selling used cars. We
-              connect car enthusiasts with their dream vehicles.
+              Kerala's most trusted platform for buying and selling used cars.
+              We connect car enthusiasts with their dream vehicles.
             </p>
             <div className="contact-info">
               <div className="contact-item">
                 <Email className="contact-icon" />
-                <span>support@carauras.com</span>
+                <span>infoatcarauras@gmail.com</span>
               </div>
-              <div className="contact-item">
+              {/* <div className="contact-item">
                 <Phone className="contact-icon" />
                 <span>+91 98765 43210</span>
-              </div>
+              </div> */}
               <div className="contact-item">
                 <LocationOn className="contact-icon" />
-                <span>Mumbai, India</span>
+                <span>Kerala, India</span>
               </div>
             </div>
           </div>
