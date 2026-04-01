@@ -6,7 +6,15 @@
 //     : "https://carauras-backend.onrender.com";
 
 // export const BACKEND_URL = "http://localhost:5000";
-export const BACKEND_URL = "https://carauras-1.onrender.com";
+
+export const REACT_ENV = "development";
+
+export const BACKEND_URL =
+  REACT_ENV === "production"
+    ? "https://carauras-1.onrender.com"
+    : REACT_ENV === "development"
+    ? "https://carauras-dev-backend.onrender.com"
+    : "http://localhost:5000";
 
 export const PROFILE_URL = `${BACKEND_URL}/api/v1/user/me`;
 export const SIGN_IN_URL = `${BACKEND_URL}/api/v1/user/signin`;
