@@ -25,26 +25,26 @@ const limiter = rateLimit({
   message: "Too many requests from this IP, please try again after 15 minutes",
 });
 
-var corsOptions = {
-  origin:
-    process.env.NODE_ENV == "production"
-      ? process.env.WEBSITE_LIVE_URL
-      : process.env.WEBSITE_LOCAL_URL,
-
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  preflightContinue: false,
-  optionsSuccessStatus: 204,
-  credentials: true,
-};
-
 // var corsOptions = {
-//   origin: "http://localhost:3000",
+//   origin:
+//     process.env.NODE_ENV == "production"
+//       ? process.env.WEBSITE_LIVE_URL
+//       : process.env.WEBSITE_LOCAL_URL,
 
 //   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
 //   preflightContinue: false,
 //   optionsSuccessStatus: 204,
 //   credentials: true,
 // };
+
+var corsOptions = {
+  origin: "https://carauras.com",
+
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  preflightContinue: false,
+  optionsSuccessStatus: 204,
+  credentials: true,
+};
 
 // Middlewares
 dotenv.config();
