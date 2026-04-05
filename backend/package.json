@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./src/server.js",
+    "start:prod": "pm2 start ./src/server.js -i max",
     "dev": "nodemon ./src/server",
     "test": "jest --coverage",
     "test:unit": "jest --testPathPattern=/tests/unit",
@@ -29,6 +30,7 @@
     "mongoose": "^9.3.3",
     "node-cron": "^4.1.0",
     "nodemailer": "^6.10.1",
+    "pm2": "^6.0.14",
     "socket.io": "^4.8.1",
     "stripe": "^18.2.1",
     "supertest": "^7.2.2",
